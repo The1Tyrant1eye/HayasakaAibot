@@ -311,21 +311,21 @@ def info(update: Update, context: CallbackContext):
     disaster_level_present = False
 
     if user.id == OWNER_ID:
-        text += "\n\nThis person is my 'Owner'."
+        text += "\n\nThis person is My Master 'Kaguya-Sama'."
     elif user.id in DEV_USERS:
-        text += "\n\nThis person is my 'Best Friend'."
+        text += "\n\nThis person is Student Council's 'Presidents'."
         disaster_level_present = True
     elif user.id in DRAGONS:
-        text += "\n\nThis person is my 'Friend'."
+        text += "\n\nThis person is Student Council's 'Secretary'."
         disaster_level_present = True
     elif user.id in DEMONS:
-        text += "\n\nThis person is my 'Servant'."
+        text += "\n\nThis person is 'Discipline Community Member'."
         disaster_level_present = True
     elif user.id in TIGERS:
-        text += "\n\nThis person is just a 'Peasant'."
+        text += "\n\nThis person is just a 'Accountant'."
         disaster_level_present = True
     elif user.id in WOLVES:
-        text += "\n\nThis person is just a 'Slave'."
+        text += "\n\nThis person is just a 'Friend'."
         disaster_level_present = True
 
 
@@ -467,7 +467,7 @@ def set_about_bio(update: Update, context: CallbackContext):
 
         if user_id == bot.id and sender_id not in DEV_USERS:
             message.reply_text(
-                "Erm... yeah, I only trust my best friends to set my bio.",
+                "Erm... yeah, I only trust my presidents to set my bio.",
             )
             return
 
