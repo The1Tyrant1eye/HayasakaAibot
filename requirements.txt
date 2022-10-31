@@ -14,7 +14,7 @@ hachoir
 pykeyboard
 pynewtonmath
 aiofiles
-PhoenixScanner
+PhoenixScanner==v1.0.7
 ffmpeg-python
 spongemock
 zalgo-text
